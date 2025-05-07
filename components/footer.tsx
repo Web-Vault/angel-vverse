@@ -31,15 +31,22 @@ export default function Footer() {
             <Link href="/" className="inline-block group">
               <motion.div
                 whileHover={{ scale: 1.02 }}
-                className="text-2xl font-bold"
+                className="text-2xl font-bold flex items-center gap-2"
               >
-                <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                  Angel Vverse <br />
-                </span>
+                <img 
+                  src="/Angel_Vverse_-_blue-removebg-preview.png" 
+                  alt="Angel Vverse" 
+                  className="h-12 w-auto object-contain"
+                />
+                <div className="flex flex-col">
+                  <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                    Angel Vverse
+                  </span>
+                  <span className="text-blue-400 text-[9px] mt-[-4px]">
+                    Where creativity meets connectivity
+                  </span>
+                </div>
               </motion.div>
-              <span className="text-blue-400 text-[9px]">
-                Where creativity meets connectivity
-              </span>
             </Link>
             <p className="text-blue-200 leading-relaxed">
               Transforming businesses through innovative digital marketing
@@ -54,7 +61,7 @@ export default function Footer() {
               ].map((social, index) => (
                 <motion.div
                   key={index}
-                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  whileHover={{ scale: 1.1, rotate: 15 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
@@ -134,10 +141,10 @@ export default function Footer() {
               {[
                 {
                   icon: MapPin,
-                  text: "123 Marketing Street, Digital City, DC 12345",
+                  text: "A-301 Marketing Street, Digital City, DC 12345",
                 },
-                { icon: Phone, text: "(123) 456-7890" },
-                { icon: Mail, text: "info@digimarkpro.com" },
+                { icon: Phone, text: "+91 9328964624" },
+                { icon: Mail, text: "info@angervverse.com" },
               ].map((contact, index) => (
                 <motion.li
                   key={index}
