@@ -141,10 +141,12 @@ export default function Footer() {
               {[
                 {
                   icon: MapPin,
-                  text: "A-301 Marketing Street, Digital City, DC 12345",
+                  text: "A-1231 Time Square Grand, SBR, Ahmedabad, Gujarat 380001",
                 },
                 { icon: Phone, text: "+91 9328964624" },
+                { icon: Phone, text: "+91 8758499499" },
                 { icon: Mail, text: "info@angervverse.com" },
+                // { icon: Mail, text: "info@angervverse.com" },
               ].map((contact, index) => (
                 <motion.li
                   key={index}
