@@ -36,7 +36,7 @@ const projects = [
     category: "Social Media",
     description:
       "Social media strategy driving 150% engagement boost and 35% sales increase",
-    image: "/project-retail.jpg",
+    image: "/social-media-fashion-forward.jpg",
     client: "Fashion Forward",
     year: "2023",
     results: ["150% Engagement", "35% Sales Lift", "500K+ Reach"],
@@ -48,7 +48,7 @@ const projects = [
     category: "Photography",
     description:
       "Visual campaign resulting in 200+ first-week sales for eco-products",
-    image: "/project-eco.jpg",
+    image: "/eCommerce advertising.jpg",
     client: "EcoHome Essentials",
     year: "2023",
     results: ["200+ Sales", "85% CTR", "1.2M Impressions"],
@@ -58,7 +58,7 @@ const projects = [
     title: "Tech Startup Branding",
     category: "Graphics Design",
     description: "Brand identity driving 300% lead increase for SaaS platform",
-    image: "/project-tech.jpg",
+    image: "/tech-startup-branding.jpg",
     client: "InnovateTech Solutions",
     year: "2022",
     results: ["300% Leads", "40% Conversion", "Award Winning"],
@@ -68,7 +68,7 @@ const projects = [
     title: "B2B Content Strategy",
     category: "Content Creation",
     description: "Content engine reducing CPA by 60% while boosting MQLs",
-    image: "/project-b2b.jpg",
+    image: "/B2B marketing.png",
     client: "Enterprise Solutions Inc.",
     year: "2022",
     results: ["75% MQL Increase", "60% CPA Reduction", "4x ROI"],
@@ -78,7 +78,7 @@ const projects = [
     title: "Restaurant Social Campaign",
     category: "Social Media",
     description: "Geo-targeted campaign driving 40% foot traffic surge",
-    image: "/project-restaurant.jpg",
+    image: "/restaurant-social-media-marketing.jpg",
     client: "Flavor Fusion Restaurants",
     year: "2023",
     results: ["500K+ Reach", "40% Traffic Boost", "25% Repeat Rate"],
@@ -88,7 +88,7 @@ const projects = [
     title: "Luxury Product Catalog",
     category: "Photography",
     description: "Premium visuals increasing average order value by 65%",
-    image: "/project-luxury.jpg",
+    image: "/jewellery-catalog.jpg",
     client: "Elegance Jewelers",
     year: "2022",
     results: ["65% AOV Increase", "50% Social Shares", "4.8★ Reviews"],
@@ -211,7 +211,7 @@ export default function ProjectsPage() {
           >
             <Tabs defaultValue="All" className="max-w-5xl mx-auto">
               <TabsList className="w-full mb-12 bg-gradient-to-br from-gray-50 to-blue-50 p-1 rounded-2xl backdrop-blur-sm border border-gray-200">
-                <motion.div className="grid grid-cols-5 gap-2" initial={false}>
+                <motion.div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 min-w-max md:min-w-0" initial={false}>
                   {categories.map((category) => (
                     <TabsTrigger
                       key={category}

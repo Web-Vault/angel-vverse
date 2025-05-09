@@ -52,7 +52,7 @@ const projects = [
   {
     title: "Luxury Retail Expansion",
     category: "Brand Strategy",
-    image: "/project1.jpg",
+    image: "/home-lux-catalog.jpg",
     results: ["+300% Engagement", "+45% Conversions"],
   },
   {
@@ -64,7 +64,7 @@ const projects = [
   {
     title: "Fashion E-commerce",
     category: "Visual Identity",
-    image: "/project3.jpg",
+    image: "/home-eCom.jpg",
     results: ["+150% Revenue", "Award Winning"],
   },
 ];
@@ -636,7 +636,7 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="relative"
+              className="relative hidden lg:block"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-400/10 rounded-3xl blur-3xl" />
               <div className="relative">
