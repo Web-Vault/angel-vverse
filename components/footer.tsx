@@ -144,7 +144,7 @@ export default function Footer() {
                   text: "A-1231 Time Square Grand, SBR, Ahmedabad, Gujarat 380001",
                 },
                 { icon: Phone, text: "+91 9328964624" },
-                { icon: Phone, text: "+91 8758499499" },
+                // { icon: Phone, text: "+91 8758499499" },
                 { icon: Mail, text: "info@angervverse.com" },
                 // { icon: Mail, text: "info@angervverse.com" },
               ].map((contact, index) => (
