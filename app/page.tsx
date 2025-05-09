@@ -119,8 +119,14 @@ export default function Home() {
               key={i}
               className="absolute w-1 h-1 bg-white/20 rounded-full"
               initial={{
-                x: typeof window !== 'undefined' ? Math.random() * window.innerWidth : 0,
-                y: typeof window !== 'undefined' ? Math.random() * window.innerHeight : 0,
+                x:
+                  typeof window !== "undefined"
+                    ? Math.random() * window.innerWidth
+                    : 0,
+                y:
+                  typeof window !== "undefined"
+                    ? Math.random() * window.innerHeight
+                    : 0,
               }}
               animate={{
                 y: [null, -20, 20],
@@ -274,26 +280,38 @@ export default function Home() {
               >
                 <div className="relative">
                   <Image
-                    src="/hero-image.png"
+                    src="/digital-marketing-concept-design-vector-removebg-preview.png"
                     alt="Digital Marketing"
                     width={600}
                     height={600}
-                    className="rounded-2xl shadow-2xl"
+                    className="rounded-2xl"
                   />
                   {/* Floating Stats Card */}
                   <motion.div
                     initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    animate={{ 
+                      opacity: 1, 
+                      x: 0,
+                      y: [0, -10, 0],
+                      transition: {
+                        y: {
+                          duration: 2,
+                          repeat: Infinity,
+                          ease: "easeInOut"
+                        }
+                      }
+                    }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: 1.5 }}
                     className="absolute -right-8 top-1/4 bg-white/10 backdrop-blur-lg rounded-xl p-4 border border-white/20"
                   >
                     <div className="flex items-center gap-3">
                       <TrendingUp className="text-green-400" />
                       <div>
-                        <div className="text-sm text-gray-300">Growth Rate</div>
-                        <div className="text-xl font-bold text-white">
-                          +147%
+                        <div className="text-sm text-gray-300">
+                          Conversion Rate
                         </div>
+                        <div className="text-xl font-bold text-white">+147%</div>
                       </div>
                     </div>
                   </motion.div>
@@ -623,19 +641,30 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-400/10 rounded-3xl blur-3xl" />
               <div className="relative">
                 <Image
-                  src="/results-dashboard.jpg"
+                  src="/realistic-style-dashboard-website-with-flat-color-free-vector-removebg-preview.png"
                   alt="Analytics Dashboard"
                   width={600}
                   height={600}
-                  className="rounded-2xl shadow-2xl border border-white/10"
+                  className="rounded-2xl border-white/10"
                 />
 
                 {/* Floating Stats Cards */}
                 <motion.div
                   initial={{ opacity: 0, x: 20 }}
+                  animate={{ 
+                    opacity: 1, 
+                    x: 0,
+                    y: [0, -10, 0],
+                    transition: {
+                      y: {
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                      }
+                    }
+                  }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.5 }}
-                  viewport={{ once: true }}
+                  transition={{ delay: 1.7 }}
                   className="absolute -right-8 top-1/4 bg-white/10 backdrop-blur-lg rounded-xl p-4 border border-white/20"
                 >
                   <div className="flex items-center gap-3">
@@ -651,9 +680,19 @@ export default function Home() {
 
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.7 }}
-                  viewport={{ once: true }}
+                  animate={{ 
+                    opacity: 1, 
+                    x: 0,
+                    y: [0, 10, 0],
+                    transition: {
+                      y: {
+                        duration: 2.5,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                      }
+                    }
+                  }}
+                  transition={{ delay: 1.5 }}
                   className="absolute -left-8 bottom-1/4 bg-white/10 backdrop-blur-lg rounded-xl p-4 border border-white/20"
                 >
                   <div className="flex items-center gap-3">
@@ -838,8 +877,9 @@ export default function Home() {
                 </h2>
 
                 <p className="text-xl text-gray-300">
-                  Partner with us to architect your brand's future in the digital
-                  ecosystem. Let's create something extraordinary together.
+                  Partner with us to architect your brand's future in the
+                  digital ecosystem. Let's create something extraordinary
+                  together.
                 </p>
 
                 <motion.div
@@ -885,10 +925,26 @@ export default function Home() {
                 className="grid grid-cols-2 gap-6"
               >
                 {[
-                  { icon: <Users className="h-8 w-8" />, stat: "500+", label: "Happy Clients" },
-                  { icon: <Award className="h-8 w-8" />, stat: "15+", label: "Industry Awards" },
-                  { icon: <Calendar className="h-8 w-8" />, stat: "10+", label: "Years Experience" },
-                  { icon: <TrendingUp className="h-8 w-8" />, stat: "300%", label: "Avg. Growth" }
+                  {
+                    icon: <Users className="h-8 w-8" />,
+                    stat: "500+",
+                    label: "Happy Clients",
+                  },
+                  {
+                    icon: <Award className="h-8 w-8" />,
+                    stat: "15+",
+                    label: "Industry Awards",
+                  },
+                  {
+                    icon: <Calendar className="h-8 w-8" />,
+                    stat: "10+",
+                    label: "Years Experience",
+                  },
+                  {
+                    icon: <TrendingUp className="h-8 w-8" />,
+                    stat: "300%",
+                    label: "Avg. Growth",
+                  },
                 ].map((item, index) => (
                   <motion.div
                     key={index}
@@ -899,7 +955,9 @@ export default function Home() {
                     className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-blue-500/30 transition-all duration-300"
                   >
                     <div className="text-blue-400 mb-4">{item.icon}</div>
-                    <div className="text-3xl font-bold text-white mb-1">{item.stat}</div>
+                    <div className="text-3xl font-bold text-white mb-1">
+                      {item.stat}
+                    </div>
                     <div className="text-gray-400">{item.label}</div>
                   </motion.div>
                 ))}

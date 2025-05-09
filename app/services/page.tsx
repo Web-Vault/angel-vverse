@@ -28,7 +28,7 @@ const services = [
     description:
       "Data-driven content strategies that drive engagement and conversions",
     icon: <PenTool className="w-8 h-8 text-blue-600" />,
-    image: "/content-strategy.jpg",
+    image: "/content-marketing-isometric-illustration-marketers-copywriter-create-advertising-seo-texts-engaging-content-isolated-3d-concept-on-white-inbound-marketing-smm-media-audience-attraction-vector-removebg.png",
     features: [
       "Blog posts and articles",
       "Website copy optimization",
@@ -48,7 +48,7 @@ const services = [
     title: "Social Media Management",
     description: "End-to-end social media solutions from strategy to execution",
     icon: <Smartphone className="w-8 h-8 text-blue-600" />,
-    image: "/social-media.jpg",
+    image: "/social-media-marketing-illustration-for-advertising-online-service-platform-online-course-analytic-ad-management-software-website-vector-removebg-preview.png",
     features: [
       "Platform-specific strategies",
       "Content calendar management",
@@ -68,7 +68,7 @@ const services = [
     title: "Brand Visual Storytelling",
     description: "Premium visual content for consistent brand identity",
     icon: <Camera className="w-8 h-8 text-blue-600" />,
-    image: "/brand-photography.jpg",
+    image: "/video-production-concept-with-camera-and-tools-product-free-vector-removebg-preview.png",
     features: [
       "Product lifestyle shoots",
       "360° product visualization",
@@ -88,7 +88,7 @@ const services = [
     title: "Performance Marketing",
     description: "Targeted campaigns that deliver measurable ROI",
     icon: <BarChart className="w-8 h-8 text-blue-600" />,
-    image: "/digital-ads.jpg",
+    image: "/website-advertising-campaign-analysis-concept-website-advertising-network-banner-advertising-on-display-networks-social-media-promotion-digital-display-advertising-campaign-illustration-vector-removeb.png",
     features: [
       "PPC campaign management",
       "Programmatic advertising",
