@@ -318,9 +318,9 @@ export default function ContactPage() {
                                 Enterprise Solutions
                               </h3>
                               <p className="text-gray-600">
-                                strategic@digimarkpro.com
+                                strategic@angelvverse.com
                               </p>
-                              <p className="text-gray-600">+1 (555) 234-5678</p>
+                              <p className="text-gray-600">+91 8758499499</p>
                             </div>
                           </CardContent>
                         </Card>
@@ -337,9 +337,9 @@ export default function ContactPage() {
                                 Media Inquiries
                               </h3>
                               <p className="text-gray-600">
-                                pr@digimarkpro.com
+                                pr@angelvverse.com
                               </p>
-                              <p className="text-gray-600">+1 (555) 234-5679</p>
+                              <p className="text-gray-600">+91 9328964624</p>
                             </div>
                           </CardContent>
                         </Card>
@@ -356,10 +356,10 @@ export default function ContactPage() {
                                 Global Headquarters
                               </h3>
                               <p className="text-gray-600">
-                                456 Innovation Boulevard
+                                A-3121 TimeSquare Grand, SBR
                               </p>
                               <p className="text-gray-600">
-                                Tech Valley, TV 67890
+                                Ahmedabad, 380059
                               </p>
                             </div>
                           </CardContent>
@@ -510,7 +510,7 @@ export default function ContactPage() {
                                   Priority Support
                                 </h3>
                                 <p className="text-blue-100">
-                                  +1 (555) 234-5680
+                                +91 9328964624
                                 </p>
                               </div>
                             </div>

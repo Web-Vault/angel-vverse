@@ -141,7 +141,7 @@ export default function Footer() {
               {[
                 {
                   icon: MapPin,
-                  text: "A-1231 Time Square Grand, SBR, Ahmedabad, Gujarat 380001",
+                  text: "A-3121 TimeSquare Grand, SBR, Ahmedabad, Gujarat 380059",
                 },
                 { icon: Phone, text: "+91 9328964624" },
                 // { icon: Phone, text: "+91 8758499499" },
