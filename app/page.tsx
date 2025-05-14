@@ -710,7 +710,7 @@ export default function Home() {
       </section>
 
       {/* Enhanced Success Stories Section */}
-      <section className="py-32 bg-white relative overflow-hidden">
+      <section id="case-study" className="py-32 bg-white relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0">
           <div

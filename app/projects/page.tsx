@@ -20,6 +20,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { projects } from "@/app/data/projects";
 
 const categories = [
   "All",
@@ -27,72 +28,6 @@ const categories = [
   "Content Creation",
   "Photography",
   "Graphics Design",
-];
-
-const projects = [
-  {
-    id: "retail-brand",
-    title: "Retail Brand Transformation",
-    category: "Social Media",
-    description:
-      "Social media strategy driving 150% engagement boost and 35% sales increase",
-    image: "/social-media-fashion-forward.jpg",
-    client: "Fashion Forward",
-    year: "2023",
-    results: ["150% Engagement", "35% Sales Lift", "500K+ Reach"],
-    color: "from-blue-600 to-indigo-600",
-  },
-  {
-    id: "ecommerce-launch",
-    title: "E-commerce Product Launch",
-    category: "Photography",
-    description:
-      "Visual campaign resulting in 200+ first-week sales for eco-products",
-    image: "/eCommerce advertising.jpg",
-    client: "EcoHome Essentials",
-    year: "2023",
-    results: ["200+ Sales", "85% CTR", "1.2M Impressions"],
-  },
-  {
-    id: "tech-startup",
-    title: "Tech Startup Branding",
-    category: "Graphics Design",
-    description: "Brand identity driving 300% lead increase for SaaS platform",
-    image: "/tech-startup-branding.jpg",
-    client: "InnovateTech Solutions",
-    year: "2022",
-    results: ["300% Leads", "40% Conversion", "Award Winning"],
-  },
-  {
-    id: "content-strategy",
-    title: "B2B Content Strategy",
-    category: "Content Creation",
-    description: "Content engine reducing CPA by 60% while boosting MQLs",
-    image: "/B2B marketing.png",
-    client: "Enterprise Solutions Inc.",
-    year: "2022",
-    results: ["75% MQL Increase", "60% CPA Reduction", "4x ROI"],
-  },
-  {
-    id: "restaurant-campaign",
-    title: "Restaurant Social Campaign",
-    category: "Social Media",
-    description: "Geo-targeted campaign driving 40% foot traffic surge",
-    image: "/restaurant-social-media-marketing.jpg",
-    client: "Flavor Fusion Restaurants",
-    year: "2023",
-    results: ["500K+ Reach", "40% Traffic Boost", "25% Repeat Rate"],
-  },
-  {
-    id: "product-catalog",
-    title: "Luxury Product Catalog",
-    category: "Photography",
-    description: "Premium visuals increasing average order value by 65%",
-    image: "/jewellery-catalog.jpg",
-    client: "Elegance Jewelers",
-    year: "2022",
-    results: ["65% AOV Increase", "50% Social Shares", "4.8★ Reviews"],
-  },
 ];
 
 export default function ProjectsPage() {
@@ -314,9 +249,12 @@ export default function ProjectsPage() {
                               variant="ghost"
                               size="sm"
                               className="text-blue-600 hover:text-blue-700"
+                              asChild
                             >
-                              View Details
-                              <ArrowRight className="w-4 h-4 ml-2" />
+                              <Link href={`/projects/${project.slug}`}>
+                                View Details
+                                <ArrowRight className="w-4 h-4 ml-2" />
+                              </Link>
                             </Button>
                           </div>
                           <div className="flex flex-wrap gap-2">
@@ -325,7 +263,7 @@ export default function ProjectsPage() {
                                 key={i}
                                 className="px-3 py-1 text-xs font-medium bg-blue-50 text-blue-600 rounded-full"
                               >
-                                {result}
+                                {result.metric} {result.label}
                               </span>
                             ))}
                           </div>

@@ -10,8 +10,10 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { blogPosts } from "@/app/data/blog"
 
 const categories = [
+  // "All",
   "Digital Marketing",
   "Social Media",
   "Content Strategy",
@@ -20,75 +22,6 @@ const categories = [
   "Photography",
   "Design",
   "Business Growth",
-]
-
-const blogPosts = [
-  {
-    id: "social-media-strategies",
-    title: "10 Essential Social Media Strategies for Startups",
-    excerpt:
-      "Learn the key social media strategies that can help your startup gain traction and build a strong online presence.",
-    date: "May 2, 2023",
-    author: "Sarah Johnson",
-    category: "Social Media",
-    image: "/placeholder.svg?height=400&width=600",
-    readTime: "8 min read",
-  },
-  {
-    id: "content-converts",
-    title: "How to Create Content That Converts",
-    excerpt:
-      "Discover proven techniques for creating content that not only engages your audience but also drives conversions for your business.",
-    date: "April 18, 2023",
-    author: "Michael Chen",
-    category: "Content Strategy",
-    image: "/placeholder.svg?height=400&width=600",
-    readTime: "6 min read",
-  },
-  {
-    id: "digital-marketing-guide",
-    title: "The Ultimate Guide to Digital Marketing for New Businesses",
-    excerpt:
-      "A comprehensive guide to help new businesses establish a strong digital presence and reach their target audience effectively.",
-    date: "April 5, 2023",
-    author: "Emma Wilson",
-    category: "Digital Marketing",
-    image: "/placeholder.svg?height=400&width=600",
-    readTime: "12 min read",
-  },
-  {
-    id: "seo-techniques",
-    title: "5 Advanced SEO Techniques to Boost Your Website Traffic",
-    excerpt:
-      "Take your SEO strategy to the next level with these advanced techniques that can significantly increase your website traffic.",
-    date: "March 22, 2023",
-    author: "David Rodriguez",
-    category: "SEO",
-    image: "/placeholder.svg?height=400&width=600",
-    readTime: "7 min read",
-  },
-  {
-    id: "brand-identity",
-    title: "Building a Strong Brand Identity in a Competitive Market",
-    excerpt:
-      "Learn how to develop a distinctive brand identity that helps your business stand out in a crowded marketplace.",
-    date: "March 10, 2023",
-    author: "Jessica Lee",
-    category: "Branding",
-    image: "/placeholder.svg?height=400&width=600",
-    readTime: "9 min read",
-  },
-  {
-    id: "product-photography",
-    title: "Product Photography Tips That Will Transform Your E-commerce Store",
-    excerpt:
-      "Discover professional product photography techniques that can enhance your product listings and increase sales.",
-    date: "February 28, 2023",
-    author: "Ryan Thompson",
-    category: "Photography",
-    image: "/placeholder.svg?height=400&width=600",
-    readTime: "5 min read",
-  },
 ]
 
 export default function BlogPage() {
