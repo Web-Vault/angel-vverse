@@ -210,19 +210,19 @@ export default function ProjectsPage() {
             className="mb-16"
           >
             <Tabs defaultValue="All" className="max-w-5xl mx-auto">
-              <TabsList className="w-full mb-12 bg-gradient-to-br from-gray-50 to-blue-50 p-1 rounded-2xl backdrop-blur-sm border border-gray-200">
-                <motion.div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 min-w-max md:min-w-0" initial={false}>
+              <TabsList className="w-full mb-12 bg-gradient-to-br from-gray-50 to-blue-50 p-1 rounded-2xl backdrop-blur-sm border border-gray-200 md:bg-gradient-to-br md:from-gray-50 md:to-blue-50 md:border md:border-gray-200 bg-transparent border-0">
+                <motion.div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 w-full" initial={false}>
                   {categories.map((category) => (
                     <TabsTrigger
                       key={category}
                       value={category}
                       onClick={() => setActiveCategory(category)}
-                      className="relative data-[state=active]:bg-white data-[state=active]:shadow-lg rounded-xl py-4 transition-all"
+                      className="relative data-[state=active]:bg-white data-[state=active]:shadow-lg rounded-xl py-3 md:py-4 transition-all text-xs md:text-base"
                     >
                       <motion.div
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="flex items-center justify-center"
+                        className="flex items-center justify-center gap-1 md:gap-2"
                       >
                         <motion.span
                           animate={{
@@ -231,19 +231,19 @@ export default function ProjectsPage() {
                           className="inline-block"
                         >
                           {category === "All" && (
-                            <Star className="h-6 w-6 mr-2 text-blue-600" />
+                            <Star className="h-4 w-4 md:h-6 md:w-6 mr-1 md:mr-2 text-blue-600" />
                           )}
                           {category === "Social Media" && (
-                            <Facebook className="h-6 w-6 mr-2 text-blue-600" />
+                            <Facebook className="h-4 w-4 md:h-6 md:w-6 mr-1 md:mr-2 text-blue-600" />
                           )}
                           {category === "Content Creation" && (
-                            <FileText className="h-6 w-6 mr-2 text-cyan-500" />
+                            <FileText className="h-4 w-4 md:h-6 md:w-6 mr-1 md:mr-2 text-cyan-500" />
                           )}
                           {category === "Photography" && (
-                            <Camera className="h-6 w-6 mr-2 text-blue-600" />
+                            <Camera className="h-4 w-4 md:h-6 md:w-6 mr-1 md:mr-2 text-blue-600" />
                           )}
                           {category === "Graphics Design" && (
-                            <Palette className="h-6 w-6 mr-2 text-cyan-500" />
+                            <Palette className="h-4 w-4 md:h-6 md:w-6 mr-1 md:mr-2 text-cyan-500" />
                           )}
                         </motion.span>
                         <span className="font-semibold text-gray-700">
@@ -254,7 +254,7 @@ export default function ProjectsPage() {
                       {activeCategory === category && (
                         <motion.div
                           layoutId="activeTab"
-                          className="absolute inset-0 border-2 border-blue-200 rounded-xl"
+                          className="absolute inset-0 border-2 border-blue-200 rounded-xl md:border-2 md:border-blue-200 border-0"
                           transition={{
                             type: "spring",
                             stiffness: 300,
@@ -267,7 +267,7 @@ export default function ProjectsPage() {
                 </motion.div>
               </TabsList>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {filteredProjects.map((project, index) => (
                   <motion.div
                     key={project.id}
