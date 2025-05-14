@@ -56,10 +56,10 @@ const projects = [
     results: ["+300% Engagement", "+45% Conversions"],
   },
   {
-    title: "SaaS Platform Launch",
-    category: "Digital Campaign",
-    image: "/project2.jpg",
-    results: ["2M+ Impressions", "+60% Lead Gen"],
+    title: "Startup Product Launch",
+    category: "Influencer Campaign",
+    image: "/startup-launch.jpg",
+    results: ["3M+ Views", "+35% Signups"]
   },
   {
     title: "Fashion E-commerce",
