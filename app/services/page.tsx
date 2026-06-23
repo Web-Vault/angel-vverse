@@ -35,39 +35,44 @@ export default function ServicesPage() {
           <div className="space-y-6">
             {services.map((service, idx) => {
               const ServiceIcon = [MobileIcon, PenIcon, CameraIcon, PaletteIcon][idx];
+              const slug = service.title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and');
               return (
-                <motion.div
-                  key={service.id}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: idx * 0.1, ease: 'easeOut' }}
-                  className="p-8 border border-border rounded-3xl hover:border-accent/30 hover:shadow-xl transition-all group"
-                >
-                  <div className="flex flex-col lg:flex-row lg:items-center gap-8">
-                    <div className="lg:w-24 flex-shrink-0">
-                      <ServiceIcon className="w-16 h-16 text-accent" />
-                    </div>
-                    <div className="flex-grow">
-                      <div className="flex items-center gap-4 mb-4">
-                        <span className="text-sm font-medium text-accent bg-accent-soft px-3 py-1 rounded-full">0{service.id}</span>
-                        <h3 className="text-2xl md:text-3xl font-semibold group-hover:text-accent transition-colors">
-                          {service.title}
-                        </h3>
+                <Link key={service.id} href={`/services/${slug}`}>
+                  <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: idx * 0.1, ease: 'easeOut' }}
+                    className="p-8 border border-border rounded-3xl hover:border-accent/30 hover:shadow-xl transition-all group cursor-pointer"
+                  >
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-8">
+                      <div className="lg:w-24 flex-shrink-0">
+                        <ServiceIcon className="w-16 h-16 text-accent" />
                       </div>
-                      <p className="text-muted text-lg leading-relaxed mb-6">
-                        {service.description}
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {service.features.map((feature, i) => (
-                          <span key={i} className="text-sm text-muted bg-accent-soft/50 px-3 py-1 rounded-full">
-                            {feature}
-                          </span>
-                        ))}
+                      <div className="flex-grow">
+                        <div className="flex items-center gap-4 mb-4">
+                          <span className="text-sm font-medium text-accent bg-accent-soft px-3 py-1 rounded-full">0{service.id}</span>
+                          <h3 className="text-2xl md:text-3xl font-semibold group-hover:text-accent transition-colors">
+                            {service.title}
+                          </h3>
+                        </div>
+                        <p className="text-muted text-lg leading-relaxed mb-6">
+                          {service.description}
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          {service.features.map((feature, i) => (
+                            <span key={i} className="text-sm text-muted bg-accent-soft/50 px-3 py-1 rounded-full">
+                              {feature}
+                            </span>
+                          ))}
+                        </div>
+                        <div className="mt-6 flex items-center gap-2 text-accent font-medium">
+                          Learn more <span>→</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </motion.div>
+                  </motion.div>
+                </Link>
               );
             })}
           </div>

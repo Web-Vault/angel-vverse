@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import siteData from '../data/siteData.json';
-import { HomeIcon, UsersIcon, ServicesIcon, MailIcon } from './Icons';
+import { HomeIcon, UsersIcon, ServicesIcon, MailIcon, SparkleIcon } from './Icons';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,6 +22,7 @@ export default function Header() {
     { href: '/', label: 'Home', icon: HomeIcon },
     { href: '/about', label: 'About', icon: UsersIcon },
     { href: '/services', label: 'Services', icon: ServicesIcon },
+    { href: '/portfolio', label: 'Portfolio', icon: SparkleIcon },
     { href: '/contact', label: 'Contact', icon: MailIcon },
   ];
 
@@ -89,7 +90,7 @@ export default function Header() {
                     <Link
                       href={item.href}
                       onClick={() => setIsMenuOpen(false)}
-                      className="group flex flex-col items-center gap-2"
+                      className="group flex flex-row items-center gap-8"
                     >
                       <item.icon className="w-16 h-16 text-white mb-2 group-hover:text-accent transition-colors" />
                       <span className="text-4xl md:text-6xl font-bold text-white group-hover:text-accent transition-colors">

@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import siteData from '../data/siteData.json';
 import services from '../data/services.json';
+import testimonials from '../data/testimonials.json';
+import projects from '../data/projects.json';
 import { SparkleIcon, MobileIcon, PenIcon, CameraIcon, PaletteIcon } from '../components/Icons';
 
 export default function Home() {
@@ -103,6 +105,96 @@ export default function Home() {
                 </motion.div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">What our clients say</h2>
+            <p className="text-muted text-lg max-w-2xl mx-auto">Real feedback from real businesses we've helped grow</p>
+          </motion.div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, idx) => (
+              <motion.div
+                key={testimonial.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.1, ease: 'easeOut' }}
+                className="p-8 border border-border rounded-3xl hover:border-accent/30 hover:shadow-lg transition-all"
+              >
+                <div className="text-4xl mb-6">"{testimonial.content}"</div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-accent-soft rounded-full flex items-center justify-center text-2xl">
+                    {testimonial.avatar}
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">{testimonial.name}</h3>
+                    <p className="text-sm text-muted">{testimonial.role}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Preview */}
+      <section className="py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className="flex flex-col md:flex-row justify-between items-center gap-6 mb-16"
+          >
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-2">Featured Work</h2>
+              <p className="text-muted text-lg">Explore some of our recent projects</p>
+            </div>
+            <Link
+              href="/portfolio"
+              className="inline-flex items-center gap-2 text-accent font-medium hover:gap-3 transition-all"
+            >
+              View All Projects <span>→</span>
+            </Link>
+          </motion.div>
+          <div className="grid md:grid-cols-2 gap-8">
+            {projects.slice(0, 2).map((project, idx) => (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.1, ease: 'easeOut' }}
+                whileHover={{ y: -8 }}
+                className="group"
+              >
+                <Link href={`/portfolio/${project.slug}`} className="block">
+                  <div className="p-8 border border-border rounded-3xl hover:border-accent/30 hover:shadow-xl transition-all">
+                    <div className="text-6xl mb-6">{project.image}</div>
+                    <div className="text-sm text-accent font-medium mb-2">{project.category}</div>
+                    <h3 className="text-2xl font-semibold mb-3 group-hover:text-accent transition-colors">
+                      {project.title}
+                    </h3>
+                    <p className="text-muted mb-4">{project.description}</p>
+                    <div className="flex items-center gap-2 text-sm font-medium text-accent">
+                      View Project <span>→</span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

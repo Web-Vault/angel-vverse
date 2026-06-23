@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "role": "CEO, TechStart Inc.",
+    "content": "Working with Angel Vverse was a game-changer for our brand. Their creative approach and attention to detail transformed our digital presence entirely.",
+    "avatar": "👩‍💼"
+  },
+  {
+    "id": 2,
+    "name": "Michael Chen",
+    "role": "Founder, DesignHub",
+    "content": "The social media strategy they implemented for us resulted in a 300% increase in engagement within just two months. Truly exceptional work!",
+    "avatar": "👨‍💻"
+  },
+  {
+    "id": 3,
+    "name": "Emily Rodriguez",
+    "role": "Marketing Director, RetailCo",
+    "content": "Their content creation team is phenomenal. Every piece they produce is high-quality, on-brand, and drives real results for our business.",
+    "avatar": "👩‍🎨"
+  }
+]

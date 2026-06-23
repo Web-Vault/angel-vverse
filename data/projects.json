@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Brand Identity Redesign",
+    "slug": "brand-identity-redesign",
+    "category": "Graphic Design",
+    "client": "Innovate Corp.",
+    "description": "A complete brand identity overhaul including logo, color palette, and visual guidelines.",
+    "image": "🎨",
+    "features": ["Logo Design", "Color Palette", "Typography", "Brand Guidelines"],
+    "year": "2024"
+  },
+  {
+    "id": 2,
+    "title": "Social Media Campaign",
+    "slug": "social-media-campaign",
+    "category": "Social Media",
+    "client": "EcoWear",
+    "description": "A viral social media campaign promoting sustainable fashion.",
+    "image": "📱",
+    "features": ["Instagram Strategy", "TikTok Content", "Influencer Collaborations", "Analytics"],
+    "year": "2024"
+  },
+  {
+    "id": 3,
+    "title": "Product Photography",
+    "slug": "product-photography",
+    "category": "Photography",
+    "client": "Gourmet Goods",
+    "description": "Professional product photography for an upscale food brand.",
+    "image": "📸",
+    "features": ["Studio Photography", "Lifestyle Shots", "Photo Editing", "Catalog Production"],
+    "year": "2023"
+  },
+  {
+    "id": 4,
+    "title": "Content Strategy",
+    "slug": "content-strategy",
+    "category": "Content",
+    "client": "HealthFirst",
+    "description": "A comprehensive content strategy and editorial calendar.",
+    "image": "✍️",
+    "features": ["Content Audit", "Strategy Development", "Editorial Calendar", "SEO Optimization"],
+    "year": "2023"
+  }
+]

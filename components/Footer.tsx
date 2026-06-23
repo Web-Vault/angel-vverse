@@ -98,7 +98,7 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold mb-6 uppercase tracking-widest text-white/50">Navigate</h3>
             <ul className="space-y-4">
-              {['Home', 'About', 'Services', 'Contact'].map((item, idx) => (
+              {['Home', 'About', 'Services', 'Portfolio', 'Contact'].map((item, idx) => (
                 <motion.li
                   key={item}
                   initial={{ opacity: 0, x: -20 }}
