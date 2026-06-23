@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Social Media Marketing",
+    "description": "We don't just post—we build communities. Our data-driven social strategies turn followers into loyal customers through authentic engagement, creative campaigns, and platform-specific expertise.",
+    "icon": "📱",
+    "features": ["Instagram Growth", "Facebook Ads", "LinkedIn Networking", "TikTok Virality", "Analytics & Reporting"]
+  },
+  {
+    "id": 2,
+    "title": "Strategic Content Creation & Writing",
+    "description": "Every word matters. Our content team crafts compelling narratives that position you as an industry leader while driving SEO results and converting readers into customers.",
+    "icon": "✍️",
+    "features": ["Blog Writing", "Copywriting", "SEO Optimization", "Email Campaigns", "Content Strategy"]
+  },
+  {
+    "id": 3,
+    "title": "Product Photography",
+    "description": "First impressions are visual. Our professional photography captures the essence of your products, making them irresistible to potential buyers and elevating your e-commerce game.",
+    "icon": "📸",
+    "features": ["Studio Photography", "Lifestyle Shots", "360° Views", "Photo Editing", "Catalog Production"]
+  },
+  {
+    "id": 4,
+    "title": "Graphic Designing",
+    "description": "Visual identity that speaks volumes. From logos to full brand kits, our designs are memorable, consistent, and perfectly aligned with your brand personality.",
+    "icon": "🎨",
+    "features": ["Brand Identity", "UI/UX Design", "Social Graphics", "Print Materials", "Motion Graphics"]
+  }
+]

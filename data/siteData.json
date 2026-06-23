@@ -1,0 +1,37 @@
+{
+  "companyName": "Angel Vverse",
+  "tagline": "Where creativity meets connectivity",
+  "description": "A passionate team of digital dreamers dedicated to transforming your brand into an unforgettable experience. We blend cutting-edge strategy with heartfelt creativity to help your business soar.",
+  "about": {
+    "title": "We're More Than Just Marketers — We're Your Growth Partners",
+    "story": "Founded with a vision to redefine digital marketing, Angel Vverse emerged from a simple belief: every brand has a unique story worth telling. Our team of creative strategists, content wizards, and design virtuosos work hand-in-hand to craft campaigns that don't just reach audiences—they resonate with them.",
+    "values": [
+      { "title": "Creativity", "desc": "We think outside the box to make your brand stand out" },
+      { "title": "Authenticity", "desc": "We stay true to your brand's voice and vision" },
+      { "title": "Innovation", "desc": "We embrace new trends and technologies" },
+      { "title": "Results", "desc": "We deliver measurable impact that drives growth" }
+    ],
+    "team": [
+      { "name": "Sarah Chen", "role": "Creative Director", "bio": "10+ years transforming brands into visual masterpieces" },
+      { "name": "Marcus Johnson", "role": "Strategy Lead", "bio": "Data-driven strategist with a knack for storytelling" },
+      { "name": "Emily Rodriguez", "role": "Content Creator", "bio": "Words that captivate, stories that convert" },
+      { "name": "David Kim", "role": "Photography Lead", "bio": "Capturing your products in their best light" }
+    ]
+  },
+  "socialLinks": {
+    "instagram": "https://instagram.com/angelvverse",
+    "facebook": "https://facebook.com/angelvverse",
+    "linkedin": "https://linkedin.com/company/angelvverse"
+  },
+  "contact": {
+    "email": "hello@angelvverse.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "New York, NY"
+  },
+  "stats": [
+    { "number": "500+", "label": "Happy Clients" },
+    { "number": "1000+", "label": "Projects Delivered" },
+    { "number": "98%", "label": "Client Satisfaction" },
+    { "number": "25M+", "label": "Impressions Generated" }
+  ]
+}
