@@ -3,12 +3,13 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import siteData from '../data/siteData.json';
 import services from '../data/services.json';
+import { SparkleIcon, MobileIcon, PenIcon, CameraIcon, PaletteIcon } from '../components/Icons';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
-      <section className="py-24 lg:py-36">
+      <section className="pt-36 pb-24 lg:pt-48 lg:pb-36">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -16,8 +17,8 @@ export default function Home() {
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="space-y-8"
           >
-            <div className="inline-flex items-center gap-2 bg-accent-soft text-accent px-4 py-2 rounded-full text-sm font-medium">
-              <span>✨</span>
+            <div className="inline-flex items-center gap-2 bg-accent-soft text-accent px-4 py-2 rounded-full text-sm font-medium mb-8">
+              <SparkleIcon className="w-4 h-4" />
               <span>Digital Marketing Agency</span>
             </div>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-tight tracking-tight max-w-5xl">
@@ -74,31 +75,34 @@ export default function Home() {
           </motion.div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            {services.map((service, idx) => (
-              <motion.div
-                key={service.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.1, ease: 'easeOut' }}
-                className="group p-8 border border-border rounded-2xl hover:border-accent/30 hover:bg-accent-soft/20 transition-all"
-              >
-                <div className="text-5xl mb-6">{service.icon}</div>
-                <h3 className="text-2xl font-semibold mb-4 group-hover:text-accent transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-muted leading-relaxed mb-6">
-                  {service.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {service.features.map((feature, i) => (
-                    <span key={i} className="text-sm text-muted bg-accent-soft/50 px-3 py-1 rounded-full">
-                      {feature}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
+            {services.map((service, idx) => {
+              const ServiceIcon = [MobileIcon, PenIcon, CameraIcon, PaletteIcon][idx];
+              return (
+                <motion.div
+                  key={service.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: idx * 0.1, ease: 'easeOut' }}
+                  className="group p-8 border border-border rounded-2xl hover:border-accent/30 hover:bg-accent-soft/20 transition-all"
+                >
+                  <ServiceIcon className="w-14 h-14 text-accent mb-6" />
+                  <h3 className="text-2xl font-semibold mb-4 group-hover:text-accent transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted leading-relaxed mb-6">
+                    {service.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {service.features.map((feature, i) => (
+                      <span key={i} className="text-sm text-muted bg-accent-soft/50 px-3 py-1 rounded-full">
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
