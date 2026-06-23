@@ -1,12 +1,12 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { use } from 'react';
+import { useParams } from 'next/navigation';
 import projects from '../../../data/projects.json';
 import { SparkleIcon } from '../../../components/Icons';
 
-export default function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = use(params);
+export default function ProjectPage() {
+  const { slug } = useParams();
   const project = projects.find(p => p.slug === slug);
   if (!project) {
     return (

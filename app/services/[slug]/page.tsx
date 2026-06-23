@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { use } from 'react';
+import { useParams } from 'next/navigation';
 import services from '../../../data/services.json';
 import { SparkleIcon, MobileIcon, PenIcon, CameraIcon, PaletteIcon } from '../../../components/Icons';
 
@@ -12,8 +12,8 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   'graphic-designing': PaletteIcon
 };
 
-export default function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = use(params);
+export default function ServicePage() {
+  const { slug } = useParams();
   const service = services.find(s => {
     const serviceSlug = s.title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and');
     return serviceSlug === slug;
@@ -32,7 +32,7 @@ export default function ServicePage({ params }: { params: Promise<{ slug: string
     );
   }
 
-  const IconComponent = iconMap[params.slug] || SparkleIcon;
+  const IconComponent = iconMap[slug as string] || SparkleIcon;
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -76,7 +76,7 @@ export default function ServicePage({ params }: { params: Promise<{ slug: string
             <div className="grid md:grid-cols-2 gap-6">
               {service.features.map((feature, idx) => (
                 <div key={idx} className="flex items-start gap-4 p-6 bg-white border border-border rounded-2xl hover:border-accent/30 hover:shadow-lg transition-all">
-                  <div className="text-2xl text-accent">✓</div>
+                  <div className="text-2xl text-accent">✅</div>
                   <p className="text-lg font-medium">{feature}</p>
                 </div>
               ))}
