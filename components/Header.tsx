@@ -32,7 +32,7 @@ export default function Header() {
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
-        className={`fixed left-6 top-6 z-50 transition-all duration-300 ${scrolled ? 'scale-90' : 'scale-100'}`}
+        className={`fixed left-7 top-7 z-50 transition-all duration-300 scale-100`}
       >
         <Link
           href="/"
@@ -54,7 +54,7 @@ export default function Header() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className={`fixed right-6 top-6 z-50 w-14 h-14 rounded-full bg-accent text-white shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center ${scrolled ? 'scale-90' : 'scale-100'}`}
+        className={`fixed right-7 top-7 z-50 w-14 h-14 rounded-full bg-accent text-white shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center scale-100`}
       >
         {isMenuOpen ? (
           <span className="text-2xl">✕</span>
