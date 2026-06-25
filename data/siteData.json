@@ -12,10 +12,10 @@
       { "title": "Results", "desc": "We deliver measurable impact that drives growth" }
     ],
     "team": [
-      { "name": "Sarah Chen", "role": "Creative Director", "bio": "10+ years transforming brands into visual masterpieces" },
-      { "name": "Marcus Johnson", "role": "Strategy Lead", "bio": "Data-driven strategist with a knack for storytelling" },
-      { "name": "Emily Rodriguez", "role": "Content Creator", "bio": "Words that captivate, stories that convert" },
-      { "name": "David Kim", "role": "Photography Lead", "bio": "Capturing your products in their best light" }
+      { "name": "Saloni Borsaniya", "role": "Creative Director", "bio": "10+ years transforming brands into visual masterpieces" },
+      { "name": "Nidhi Valambhiya", "role": "Strategy Lead", "bio": "Data-driven strategist with a knack for storytelling" },
+      { "name": "Aryan Lathigara", "role": "Content Creator / Developer", "bio": "Words that captivate, stories that convert" },
+      { "name": "Krish Ranipa", "role": "Photography Lead", "bio": "Capturing your products in their best light" }
     ]
   },
   "socialLinks": {
@@ -25,8 +25,8 @@
   },
   "contact": {
     "email": "hello@angelvverse.com",
-    "phone": "+1 (555) 123-4567",
-    "location": "New York, NY"
+    "phone": "+91 87584 99499",
+    "location": "Ahmedabad, GJ"
   },
   "stats": [
     { "number": "500+", "label": "Happy Clients" },
