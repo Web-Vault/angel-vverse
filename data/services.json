@@ -4,27 +4,259 @@
     "title": "Social Media Marketing",
     "description": "We don't just post—we build communities. Our data-driven social strategies turn followers into loyal customers through authentic engagement, creative campaigns, and platform-specific expertise.",
     "icon": "📱",
-    "features": ["Instagram Growth", "Facebook Ads", "LinkedIn Networking", "TikTok Virality", "Analytics & Reporting"]
+    "features": ["Instagram Growth", "Facebook Ads", "LinkedIn Networking", "TikTok Virality", "Analytics & Reporting"],
+    "serviceOverview": "Our comprehensive social media marketing service is designed to elevate your brand's online presence, engage your target audience, and drive measurable business results. We specialize in creating tailored strategies for each platform to maximize your reach and impact.",
+    "problemsSolved": [
+      {
+        "title": "Low Engagement Rates",
+        "description": "Struggling with lack of meaningful audience interaction on your social platforms"
+      },
+      {
+        "title": "Inconsistent Messaging",
+        "description": "Brand voice diluted across different social media channels"
+      },
+      {
+        "title": "Low Conversion Rates",
+        "description": "Difficulty turning followers into actual paying customers"
+      },
+      {
+        "title": "Limited Analytics Insights",
+        "description": "Lacking understanding of social media analytics and ROI measurement"
+      },
+      {
+        "title": "Algorithm Fatigue",
+        "description": "Inability to keep up with constant platform algorithm changes"
+      },
+      {
+        "title": "Resource Constraints",
+        "description": "No time or resources to manage social media effectively"
+      }
+    ],
+    "whatWeProvide": [
+      {
+        "title": "Custom Strategy",
+        "description": "Tailored social media strategy aligned with your business goals"
+      },
+      {
+        "title": "Daily Management",
+        "description": "Content scheduling and management across all platforms"
+      },
+      {
+        "title": "Visual Content Creation",
+        "description": "High-quality graphics and compelling copywriting"
+      },
+      {
+        "title": "Ad Campaigns",
+        "description": "Targeted ad development and optimization"
+      },
+      {
+        "title": "Community Management",
+        "description": "Genuine engagement with your audience"
+      },
+      {
+        "title": "Analytics Reports",
+        "description": "Detailed monthly performance insights"
+      },
+      {
+        "title": "A/B Testing",
+        "description": "Continuous optimization of content and campaigns"
+      }
+    ],
+    "featuresContent": "Our social media marketing service includes comprehensive Instagram growth strategies that help you build an organic, engaged following. We create and manage high-converting Facebook ad campaigns that reach your ideal customers with precision. Our LinkedIn networking service helps you establish thought leadership and build valuable professional connections. We also specialize in TikTok virality strategies that get your content in front of millions, and our detailed analytics & reporting ensures you always know exactly how your campaigns are performing."
   },
   {
     "id": 2,
     "title": "Strategic Content Creation & Writing",
     "description": "Every word matters. Our content team crafts compelling narratives that position you as an industry leader while driving SEO results and converting readers into customers.",
     "icon": "✍️",
-    "features": ["Blog Writing", "Copywriting", "SEO Optimization", "Email Campaigns", "Content Strategy"]
+    "features": ["Blog Writing", "Copywriting", "SEO Optimization", "Email Campaigns", "Content Strategy"],
+    "serviceOverview": "Our strategic content creation and writing service delivers high-quality, SEO-optimized content that resonates with your audience, establishes your authority, and drives organic traffic to your website. We create content that tells your story and connects with your customers on a deeper level.",
+    "problemsSolved": [
+      {
+        "title": "Poor Quality Content",
+        "description": "Lack of engaging, high-quality content that attracts readers"
+      },
+      {
+        "title": "Low Search Rankings",
+        "description": "Poor SEO performance and limited organic traffic"
+      },
+      {
+        "title": "Inconsistent Brand Voice",
+        "description": "Confusing messaging that damages brand identity"
+      },
+      {
+        "title": "Low Lead Conversions",
+        "description": "Difficulty turning visitors into qualified leads"
+      },
+      {
+        "title": "Wasted Time",
+        "description": "Time-consuming content creation with limited results"
+      },
+      {
+        "title": "No Strategy",
+        "description": "Operating without a clear content strategy or calendar"
+      }
+    ],
+    "whatWeProvide": [
+      {
+        "title": "Content Strategy",
+        "description": "Comprehensive strategy and editorial calendar"
+      },
+      {
+        "title": "Blog Writing",
+        "description": "SEO-optimized articles and blog posts"
+      },
+      {
+        "title": "Website Copy",
+        "description": "Compelling landing page and website content"
+      },
+      {
+        "title": "Email Marketing",
+        "description": "Engaging campaigns and newsletters"
+      },
+      {
+        "title": "Social Content",
+        "description": "Social media posts and captions"
+      },
+      {
+        "title": "Product Descriptions",
+        "description": "E-commerce content that converts"
+      },
+      {
+        "title": "Performance Tracking",
+        "description": "Ongoing optimization and analytics"
+      }
+    ],
+    "featuresContent": "Our expert blog writing service delivers well-researched, engaging articles that establish your brand as an industry thought leader. We provide professional copywriting for all your marketing needs, from ad copy to sales pages. Our SEO optimization ensures your content ranks well in search engines and drives organic traffic to your site. We create effective email campaigns that nurture customer relationships and boost conversions, and our comprehensive content strategy gives you a clear roadmap for long-term content success."
   },
   {
     "id": 3,
     "title": "Product Photography",
     "description": "First impressions are visual. Our professional photography captures the essence of your products, making them irresistible to potential buyers and elevating your e-commerce game.",
     "icon": "📸",
-    "features": ["Studio Photography", "Lifestyle Shots", "360° Views", "Photo Editing", "Catalog Production"]
+    "features": ["Studio Photography", "Lifestyle Shots", "360° Views", "Photo Editing", "Catalog Production"],
+    "serviceOverview": "Our professional product photography service helps you showcase your products in the best possible light. We create stunning, high-quality images that highlight your products' features, build customer trust, and boost your e-commerce conversion rates.",
+    "problemsSolved": [
+      {
+        "title": "Poor Image Quality",
+        "description": "Low-quality photos that fail to attract customers"
+      },
+      {
+        "title": "Inconsistent Imagery",
+        "description": "Disjointed visual experience across platforms"
+      },
+      {
+        "title": "No Lifestyle Context",
+        "description": "Missing images showing products in real use"
+      },
+      {
+        "title": "Standing Out",
+        "description": "Difficulty competing in crowded marketplaces"
+      },
+      {
+        "title": "Unappealing Online",
+        "description": "Products don't translate well to digital"
+      },
+      {
+        "title": "Studio Overhead",
+        "description": "Expensive and time-consuming in-house setup"
+      }
+    ],
+    "whatWeProvide": [
+      {
+        "title": "Studio Photography",
+        "description": "Professional lighting and perfect composition"
+      },
+      {
+        "title": "Lifestyle Shots",
+        "description": "Products in real-world scenarios"
+      },
+      {
+        "title": "360° Views",
+        "description": "Interactive shopping experiences"
+      },
+      {
+        "title": "Photo Editing",
+        "description": "High-end retouching and optimization"
+      },
+      {
+        "title": "Consistent Styling",
+        "description": "Brand cohesion across all images"
+      },
+      {
+        "title": "Web Optimization",
+        "description": "Images optimized for e-commerce platforms"
+      },
+      {
+        "title": "Catalog Production",
+        "description": "Complete product imagery for all SKUs"
+      }
+    ],
+    "featuresContent": "Our professional studio photography captures your products with perfect lighting and composition. We create beautiful lifestyle shots that tell a story and connect emotionally with your customers. Our 360° views give shoppers an interactive experience, allowing them to examine products from every angle. We provide expert photo editing and retouching to ensure every image is flawless, and our catalog production delivers complete, consistent product imagery for your entire inventory."
   },
   {
     "id": 4,
     "title": "Graphic Designing",
     "description": "Visual identity that speaks volumes. From logos to full brand kits, our designs are memorable, consistent, and perfectly aligned with your brand personality.",
     "icon": "🎨",
-    "features": ["Brand Identity", "UI/UX Design", "Social Graphics", "Print Materials", "Motion Graphics"]
+    "features": ["Brand Identity", "UI/UX Design", "Social Graphics", "Print Materials", "Motion Graphics"],
+    "serviceOverview": "Our professional graphic design service helps you create a strong, memorable visual identity that sets you apart from the competition. From brand logos to marketing materials, we deliver stunning designs that communicate your brand's values and connect with your audience.",
+    "problemsSolved": [
+      {
+        "title": "Unprofessional Look",
+        "description": "Outdated visual appearance that fails to impress"
+      },
+      {
+        "title": "Inconsistent Identity",
+        "description": "Confusing brand experience across touchpoints"
+      },
+      {
+        "title": "Getting Noticed",
+        "description": "Difficulty standing out in crowded markets"
+      },
+      {
+        "title": "Low Conversions",
+        "description": "Poorly designed materials that don't convert"
+      },
+      {
+        "title": "Design Disconnect",
+        "description": "No cohesion between digital and print"
+      },
+      {
+        "title": "No Guidelines",
+        "description": "Lacking clear brand implementation rules"
+      }
+    ],
+    "whatWeProvide": [
+      {
+        "title": "Brand Identity",
+        "description": "Complete visual system and logo creation"
+      },
+      {
+        "title": "Style Guidelines",
+        "description": "Comprehensive brand documentation"
+      },
+      {
+        "title": "UI/UX Design",
+        "description": "Exceptional digital product experiences"
+      },
+      {
+        "title": "Social Graphics",
+        "description": "Engaging visual content for platforms"
+      },
+      {
+        "title": "Print Materials",
+        "description": "Brochures, flyers, and business cards"
+      },
+      {
+        "title": "Marketing Collateral",
+        "description": "Eye-catching advertising designs"
+      },
+      {
+        "title": "Motion Graphics",
+        "description": "Animated content for digital platforms"
+      }
+    ],
+    "featuresContent": "Our brand identity service creates a complete visual system that defines your brand's look and feel. We deliver professional UI/UX design that makes your digital products intuitive and delightful to use. Our social graphics are designed specifically for each platform to maximize engagement and shareability. We create beautiful print materials that maintain your brand's visual identity offline, and our motion graphics bring your brand to life with engaging animated content."
   }
 ]
